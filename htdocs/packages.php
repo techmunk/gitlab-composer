@@ -6,7 +6,7 @@ use Gitlab\Client;
 use Gitlab\Exception\RuntimeException;
 
 $packages_file = __DIR__ . '/../cache/packages.json';
-$ttl = 0; // seconds
+$ttl = 60; // seconds
 
 /**
  * Output a json file, sending max-age header, then dies
